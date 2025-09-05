@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding:0;
+    text-align: center;
+}
+body{
+    background-image: url("./Images/Paperbg.jpg");
+}
+h1{
+    background-color: #023047;
+    color: white;
+    height:5rem;
+    line-height: 5rem;
+}
+ 
+.choice-buttons{
+ margin-top: 5rem;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 3rem;
+}
+
+.choice:hover{
+    cursor: pointer;
+    background-color: #023047;
+}
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+img{
+    height: 150px;
+    width:150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.score-board{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+}
+
+#user-score,#comp-score{
+    font-size: 4rem;
+}
+.msg-container{
+    margin-top: 5rem;
+}
+#msg-display{
+    background-color:#023047;
+    color: #ffff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+}

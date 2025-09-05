@@ -1,0 +1,347 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem;
+}
+
+.sidebar{
+    background-color:#000;
+    width: 340px;
+    margin-right: 0.5rem;
+}
+
+.main-content{
+    border-radius: 1rem;
+    flex: 1;
+    overflow: auto;
+    background-color: #121212;
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.music-player{
+    background-color:#000;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color:#121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+/*Search & library option*/
+.search{
+    opacity: 0.7;
+    transition: opacity 0.3s  ease;
+}
+
+.search:hover{
+    opacity: 1;
+}
+.nav-option{
+    line-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    margin-left: 1rem;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-option img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i{
+    opacity: 0.7;
+    margin-right:1rem;
+    transition: opacity 0.3s ease;
+}
+
+.icons i:hover{
+    opacity: 1;
+}
+
+.box{
+    background-color: #232323;
+    margin: 0.75rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+    height: 8rem;
+    border-radius: 0.75rem;
+}
+
+.box-p1{
+    font-weight: 500;
+}
+
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
+}
+
+.dark-badge{
+    background-color: #000;
+    color: #fff;
+}
+
+.nav-download{
+    margin-right:5px;
+}
+
+.sticky-nav{
+    background-color: #121212;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 1;
+}
+
+.sticky-nav-icons{
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-item{
+ margin-right: 1rem;
+}
+
+@media (max-width:1000px){
+    .hide{
+        display: none;
+    }
+}
+ 
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.5;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 1px solid #fff;
+    opacity: 0.4;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.album{
+    width: 25%;
+}
+
+.player{
+    width: 50%;
+
+}
+
+.player-controls{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.controls{
+    width: 25%;
+}
+
+.player-control-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.player-control-icon:hover{
+    opacity: 1;
+}
+
+#play-pause-button{
+    height: 2rem;
+    opacity: 1;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border: 100px;
+    height: 0.2rem;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.album{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-cover{
+    height: 3rem;
+    border-radius: 3px;
+}
+
+.song-info{
+    margin:0 2rem 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+#song-name{
+    font-weight: 700;
+    padding-bottom: 3px;
+}
+
+#singer-name{
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.controls{
+    height: 100%;
+}
+
+.control-icons{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.control-icons i{
+    padding: 5px;
+}
+
+.volume-bar{
+    appearance: none;
+    width: 100px;
+    height: 6px;
+    background: transparent;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.volume-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 3px;
+    height: 0.5rem;
+    width: 0.3rem;
+}
+
+.volume-bar::-webkit-slider-thumb{
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-top: -2px;
+    background-color: #1bd760;
+}
